@@ -1,55 +1,7 @@
 {
   "version": "0.2.0",
   "configurations": [
-    {
-      "name": "(gdb) 附加",
-      "type": "cppdbg",
-      "request": "attach",
-      "program": "输入程序名称，例如 ${workspaceFolder}/a.out",
-      "MIMode": "gdb",
-      "setupCommands": [
-          {
-              "description": "为 gdb 启用整齐打印",
-              "text": "-enable-pretty-printing",
-              "ignoreFailures": true
-          },
-          {
-              "description": "将反汇编风格设置为 Intel",
-              "text": "-gdb-set disassembly-flavor intel",
-              "ignoreFailures": true
-          }
-      ]
-    },
-    {
-      "name": "(gdb) 管道启动",
-      "type": "cppdbg",
-      "request": "launch",
-      "program": "输入程序名称，例如 ${workspaceFolder}/a.out",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "pipeTransport": {
-        "debuggerPath": "/usr/bin/gdb",
-        "pipeProgram": "/usr/bin/ssh",
-        "pipeArgs": [],
-        "pipeCwd": ""
-      },
-      "MIMode": "gdb",
-      "setupCommands": [
-          {
-              "description": "为 gdb 启用整齐打印",
-              "text": "-enable-pretty-printing",
-              "ignoreFailures": true
-          },
-          {
-              "description": "将反汇编风格设置为 Intel",
-              "text": "-gdb-set disassembly-flavor intel",
-              "ignoreFailures": true
-          }
-      ]
-    },
+
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -57,8 +9,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/loser/data-structure-test1",
-      "program": "/home/loser/data-structure-test1/build/Debug/outDebug",
+      "cwd": "/home/loser/data-structure-test1/linkedList/",
+      "program": "/home/loser/data-structure-test1/linkedList/src/Test11",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

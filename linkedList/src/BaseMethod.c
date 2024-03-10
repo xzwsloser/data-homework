@@ -23,3 +23,15 @@ void displayList(Node* head){
     }
     printf("\n");
 }
+// 利用可变参数构造链表的函数
+Node* getHeadByParameters(int arg_cnt,...){
+    Node* head=createHead();
+    va_list p_args;
+    va_start(p_args,arg_cnt);
+    for(int i=0;i<arg_cnt;i++){
+       int val=va_arg(p_args,int);
+        insertHead(head,val);
+    }
+    va_end(p_args);
+    return head;;
+}
